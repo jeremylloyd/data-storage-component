@@ -23,7 +23,8 @@
 <style>
   .navbar {
     display: flex;
-    align-items: center;
+    flex-basis: 50px;
+    width: 100%;
     gap: 16px;
   }
 
@@ -33,6 +34,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    width: 100%;
     height: 120px;
   }
 </style>

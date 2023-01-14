@@ -1,14 +1,20 @@
 <script>
   export let value = 0.2;
   export let max = 1;
-
-  let minValueWidth = 12;
+  export let legendLabels = []
 </script>
 
 <div class="container">
   <div class="progress-bar">
-    <div class="progress-value" style="--value-width: calc({minValueWidth}px + (100% - {minValueWidth + 4}px) * ({value / max}))"></div>
+    <div class="progress-value" style="--value-width: calc(var(--bar-height) + (100% - var(--bar-height) - 4px) * ({value / max}))"></div>
   </div>
+  {#if legendLabels.length > 0}
+    <div class="legend">
+      {#each legendLabels as label}
+        <span class="legend-label">{label}</span>
+      {/each}
+    </div>
+  {/if}
 </div>
 
 <style>
@@ -18,12 +24,12 @@
   }
 
   .container {
-    width: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .progress-bar {
-    width: 100%;
     height: calc(var(--bar-height) + 2 * var(--value-padding));
     background-color: hsl(229, 57%, 11%);
     border-radius: 999px;
@@ -33,7 +39,6 @@
     height: var(--bar-height);
     top: var(--value-padding);
     left: var(--value-padding);
-    background-color: hsl(6, 100%, 80%);
     background-image: linear-gradient(
       to right,
       hsl(6, 100%, 80%),
@@ -43,6 +48,7 @@
     position: relative;
 
     width: var(--value-width);
+    max-width: calc(100% - 2 * var(--value-padding));
   }
 
   /* Add a white dot just inside the end of the progress value */
@@ -61,5 +67,13 @@
       hsl(0, 0%, 100%) 50%,
       hsl(0, 0%, 59%) 100%
     );
+  }
+
+  .legend {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 700;
+    font-size: 0.8rem;
   }
 </style>

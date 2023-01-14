@@ -8,9 +8,9 @@
     justify-content: center;
     align-items: center;
 
+    flex-basis: 50px;
+
     background-color: hsl(229, 57%, 11%);
-    width: 50px;
-    height: 50px;
     border-radius: 12px;
   }
 

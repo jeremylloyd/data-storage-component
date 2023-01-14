@@ -18,14 +18,18 @@
 
 <style>
   .page {
-    font-family: 'Raleway';
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     
+    font-family: 'Raleway';
     min-height: 100vh;
+    min-width: 100vw;
+    padding: 20px;
+
+    background-image: url('bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .content {
@@ -33,6 +37,6 @@
     flex-direction: column;
     gap: 12px;
 
-    max-width: 330px;
+    height: 100%;
   }
 </style>
