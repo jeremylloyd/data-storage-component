@@ -10,13 +10,13 @@
 
 <style>
   .card {
-    background-color: hsl(242, 42%, 29%);
     padding: 40px;
-
     border-radius: 12px;
-
     min-height: 200px;
     min-width: 330px;
+
+    background-color: hsl(242, 42%, 29%);
+    color: hsl(243, 100%, 93%);
   }
 
   .card-contents {
