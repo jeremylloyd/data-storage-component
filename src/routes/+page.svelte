@@ -20,6 +20,7 @@
   .page {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     
     font-family: 'Raleway';
@@ -41,10 +42,13 @@
     
     height: 100%;
     width: 100%;
+    max-width: 925px;
   }
   
   @media (min-width: 768px) {
     .page {
+      flex-direction: row;
+
       background-image: url('bg-desktop.png');
       background-position: bottom;
       background-size: 100% 50%;
@@ -52,6 +56,7 @@
 
     .content {
       flex-direction: row;
+      gap: 30px;
     }
   }
 </style>

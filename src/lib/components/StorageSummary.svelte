@@ -30,9 +30,17 @@
     font-size: 0.9rem;
   }
 
+  .storage-summary {
+    flex-grow: 1;
+  }
+
   @media (min-width: 768px) {
     .card-content {
       margin-bottom: 0;
+    }
+
+    p {
+      text-align: unset;
     }
   }
 </style>

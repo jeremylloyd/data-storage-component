@@ -18,13 +18,6 @@
 </div>
 
 <style>
-  .navbar {
-    display: flex;
-    flex-basis: 50px;
-    width: 100%;
-    gap: 16px;
-  }
-
   .card {
     position: relative;
     padding: 30px;
@@ -39,7 +32,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    flex-grow: 0;
   }
+
+  .navbar {
+    display: flex;
+    flex-basis: 50px;
+    width: 100%;
+    gap: 16px;
+  }  
 
   @media (min-width: 768px) {
     .card {

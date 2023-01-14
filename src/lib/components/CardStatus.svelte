@@ -18,7 +18,6 @@
     align-items: center;
     gap: 7px;
 
-    background: hsl(243, 100%, 93%);
     background: white;
     color: hsl(229, 57%, 11%);
     font-weight: 700;
@@ -38,5 +37,14 @@
     font-size: 0.8rem;
     color: rgb(153, 155, 158);
     flex-shrink: 0;
+  }
+
+  @media (min-width: 768px) {
+    .card-status {
+      align-self: right;
+      bottom: unset;
+      right: 40px;
+      top: -35px;
+    }
   }
 </style>

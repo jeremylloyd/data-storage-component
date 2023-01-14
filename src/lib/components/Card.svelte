@@ -26,6 +26,7 @@
     .card {
       min-width: 350px;
       padding: 40px;
+      margin-top: 35px;
     }
   }
 </style>
