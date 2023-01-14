@@ -27,6 +27,7 @@
     min-width: 100vw;
     padding: 20px;
 
+    background-color: hsl(229, 57%, 11%);
     background-image: url('bg-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,8 +36,22 @@
   .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 12px;
-
+    
     height: 100%;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .page {
+      background-image: url('bg-desktop.png');
+      background-position: bottom;
+      background-size: 100% 50%;
+    }
+
+    .content {
+      flex-direction: row;
+    }
   }
 </style>

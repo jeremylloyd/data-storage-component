@@ -5,13 +5,15 @@
   import { storageUsed, storageMax } from '$lib/stores.js';
 </script>
 
-<Card>
-  <div class="card-content">
-    <p>You've used <strong>{$storageUsed} GB</strong> of your storage</p>
-    <Progress value={$storageUsed / $storageMax} legendLabels={['0GB', `${$storageMax}GB`]}></Progress>
-    <CardStatus status={$storageMax - $storageUsed}></CardStatus>
-  </div>
-</Card>
+<div class="storage-summary">
+  <Card>
+    <div class="card-content">
+      <p>You've used <strong>{$storageUsed} GB</strong> of your storage</p>
+      <Progress value={$storageUsed / $storageMax} legendLabels={['0GB', `${$storageMax}GB`]}></Progress>
+      <CardStatus status={$storageMax - $storageUsed}></CardStatus>
+    </div>
+  </Card>
+</div>
 
 <style>
   .card-content {
@@ -26,5 +28,11 @@
   p {
     text-align: center;
     font-size: 0.9rem;
+  }
+
+  @media (min-width: 768px) {
+    .card-content {
+      margin-bottom: 0;
+    }
   }
 </style>

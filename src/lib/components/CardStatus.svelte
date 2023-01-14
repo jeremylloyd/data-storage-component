@@ -2,13 +2,13 @@
   export let status = 100;
 </script>
 
-<div class="card">
+<div class="card-status">
   <span class="status">{status}</span>
   <span class="label">GB left</span>
 </div>
 
 <style>
-  .card {
+  .card-status {
     position: absolute;
     align-self: center;
     bottom: -35px;

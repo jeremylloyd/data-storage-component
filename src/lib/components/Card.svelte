@@ -21,4 +21,11 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  @media (min-width: 768px) {
+    .card {
+      min-width: 350px;
+      padding: 40px;
+    }
+  }
 </style>

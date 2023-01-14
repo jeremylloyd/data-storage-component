@@ -30,4 +30,5 @@ Users should be able to view the optimal layout for the site depending on their 
 
 - CSS Container queries
 - Svelte Components
+  - It's hard to reuse Components if you need to apply a lot of different styles to each instance. If it gets too hard and you find yourself passing too many styling arguments to each component, just make a new component for your use case
 - Svelte Stores
