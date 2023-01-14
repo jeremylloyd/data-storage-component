@@ -29,7 +29,7 @@
     padding: 20px;
 
     background-color: hsl(229, 57%, 11%);
-    background-image: url('bg-mobile.png');
+    background-image: url('/bg-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -49,7 +49,7 @@
     .page {
       flex-direction: row;
 
-      background-image: url('bg-desktop.png');
+      background-image: url('/bg-desktop.png');
       background-position: bottom;
       background-size: 100% 50%;
     }
