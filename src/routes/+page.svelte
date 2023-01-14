@@ -4,9 +4,29 @@
 
 </svelte:head>
 
-You’ve used 815 GB of your storage
+<script>
+  import CardHeader from '$lib/components/CardHeader.svelte';
+  import StorageSummary from '$lib/components/StorageSummary.svelte';
+</script>
 
-185 GB Left
+<div class="page">
+  <div class="content">
+    <CardHeader></CardHeader>
+    <StorageSummary></StorageSummary>
+  </div>
+</div>
 
-0 GB
-1000 GB
+<style>
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+  }
+
+  .content {
+    max-width: 330px;
+  }
+</style>
