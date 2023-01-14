@@ -7,6 +7,10 @@
   <span class="label">GB left</span>
 </div>
 
+<div class="speech-arrow">
+
+</div>
+
 <style>
   .card-status {
     position: absolute;
@@ -39,12 +43,28 @@
     flex-shrink: 0;
   }
 
+  .speech-arrow {
+    /* Arrow pointing to the left using CSS borders */
+    border-right: 40px solid white;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: -20px;
+  }
+  
   @media (min-width: 768px) {
     .card-status {
       align-self: right;
       bottom: unset;
       right: 40px;
       top: -35px;
+    }
+
+    .speech-arrow {
+      display: unset;
     }
   }
 </style>
