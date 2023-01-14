@@ -26,8 +26,6 @@
     align-items: center;
     
     min-height: 100vh;
-    
-    border: dashed 1px red;
   }
   
   .content {
